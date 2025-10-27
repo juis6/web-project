@@ -1,0 +1,7 @@
+<h1>Review Task: <%= task._id %></h1>
+<p>Status: <%= task.status %></p>
+<p>Progress: <%= task.progress %>%</p>
+<p>Request: <%= task.request %></p>
+<% if (task.status === 'completed') { %>
+    <p>Response: <%= task.response %></p>
+<% } %>
